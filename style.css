@@ -1,0 +1,199 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Updated Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(50, 50, 50, 0.6); /* Semi-transparent dark background */
+    backdrop-filter: blur(10px); /* Blurry effect */
+    z-index: 1000; /* Ensures the navbar stays on top */
+    transition: background 0.3s ease;
+}
+
+.navbar a.nav-link {
+    color: white !important; /* Ensures white text */
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar a.nav-link:hover {
+    color: #8a2be2 !important; /* Purple hover effect */
+}
+
+
+/* Hero Section */
+/* .hero-section {
+    background: url('https://via.placeholder.com/1200x600') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} */
+
+/* Updated Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Purple gradient */
+    color: white;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 5px solid #4b0082; /* Adds a modern border effect */
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds subtle text shadow */
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Text shadow for subtitle */
+}
+
+.hero-section .btn-primary {
+    background-color: #8a2be2; /* Purple button color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Button shadow */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero-section .btn-primary:hover {
+    background-color: #6a0dad; /* Darker purple on hover */
+    transform: scale(1.05);
+}
+
+
+/* Product Cards */
+/* .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+} */
+
+/* Product Cards */
+.product-card {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Purple gradient */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.product-card .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-card .card-text {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+.product-card .price {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.product-card .btn-primary {
+    background-color: #8a2be2;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.product-card .btn-primary:hover {
+    background-color: #6a0dad;
+    transform: translateY(-3px);
+}
+
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Prices */
+.price {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Contact Section Styling */
+#contact {
+    background: #f8f9fa; /* Light gray background */
+    padding: 60px 0;
+}
+
+.contact-form {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h4 {
+    color: #6a11cb; /* Title color */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form .form-control {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form .form-control:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 5px rgba(106, 17, 203, 0.3);
+}
+
+.contact-form .btn-primary {
+    background-color: #6a11cb;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form .btn-primary:hover {
+    background-color: #8a2be2;
+}
+
+/* Google Map Styling */
+.map-container {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Footer */
+footer {
+    margin-top: 50px;
+}
